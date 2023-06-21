@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./result.html" method="get">
+        <fieldset>
+            <legend><h2>단이 악기 반품 양식</h2></legend>
+            <div>
+                <label for="name"><b>성함:</b> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name" placeholder="name" autocomplete="on">
+            </div>
+            <div>
+                <label for="number"><b>연락처:</b></label>
+                &nbsp;&nbsp;010<input type="text" name="number" placeholder="number">
+            </div>
+            <div>
+                <label for="type"><b>악기 종류</b></label>
+                <select name="type">
+                    <option value="mid">미디 장비</option>
+                    <option value="string">현악기</option>
+                    <option value="drums">타악기</option>
+                    <option value="piano">건반</option>
+                    <option value="acc">소모품</option>
+                    <option value="eff">이팩터</option>
+                </select>
+            </div>
+            <div>
+                <label for="summary"><b>환불 사유</b></label>
+                <textarea name="summary" rows="10" cols="25" placeholder="사유를 입력해 주세요 단순 변심은 사유가 되지 않습니다."></textarea>
+            </div>
+            <div>
+                <label for="checkbox"><b>반품 배송 기간</b></label>
+            </div>
+            <div>
+                <input type="checkbox" name="type_1" value="1week">
+                <label for="type_1">1주 이내</label>
+                <input type="checkbox" name="type_2" value="2weeks">
+                <label for="type_2">2주 이내</label>
+                <input type="checkbox" name="type_3" value="3weeks">
+                <label for="checkbox">1달 이내</label>
+            </div>
+            <div>
+                <input type="radio" name="em_dl" value="emergency_deliver">
+                <label for="em_dl">퀵 배송</label>
+                <input type="radio" name="em_dl" value="Normal_deliver">
+                <label for="em_dl">일반 배송</label>
+            </div>
+            <div>
+                <button type="submit"> 제출 </butten>
+            </div>
+
+
+        
+    </fieldset>
+</form>
+</body>
+</html>
